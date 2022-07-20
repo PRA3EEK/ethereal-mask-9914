@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "prateekchauhan0004@gmail.com",
+      "username": "pra3eek",
+      "password": "9211530295",
+      "id": 1
+    },
+    {
+      "email": "pratham@gmail.com",
+      "username": "prateekArtist",
+      "password": "5465484513845648",
+      "id": 2
+    }
+  ]
+}
