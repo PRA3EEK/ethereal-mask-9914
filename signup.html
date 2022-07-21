@@ -5,86 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles_scripts/signup.css">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        #msg {
-            display: inline;
-        }
-
-        form {
-          
-            width: 30%;
-            margin: auto;
-        }
-
-        input.largecheck {
-            width: 20px;
-            height: 20px;
-        }
-
-        .det {
-            width: 30%;
-            margin:40px auto;
-            text-align: center;
-            font-size: 13.5px;
-            color: rgba(36,28,21,0.65);
-            font-family: sans-serif;
-        }
-
-        #sub {
-            width: 100%;
-            background-color: #007C89;
-            color: white;
-            border: none;
-            font-size: 1.6rem;
-            height: 48px;
-            margin-top: 30px;
-        }
-
-        form>input {
-            width: 100%;
-            height: 48px;
-            margin: 12px 0;
-            font-size: 18px;
-            padding: 0px 10px;
-        }
-        form>label{
-            font-size: 1.6rem;
-            
-        }
-        form>h1{
-            
-             text-align: center;
-             font-family: "Means Web",Georgia,Times,"Times New Roman",serif;
-             font-weight: 550;
-        }form>p{
-            margin-top: 25px;
-            font-family: sans-serif;
-            font-size: 14px;
-            letter-spacing: 1px;
-            color: rgb(66, 65, 65);
-        }
-         form>:nth-child(2){
-          
-            text-align: center;
-            font-size: 20px;
-         }
-         a{
-            color: #007C89;
-         }
-         #image{
-            height: 40px;
-           
-         }
-         #image>img{
-            height: 100%;
-         }
-        
-    </style>
+      
+   
 </head>
 
 <body>
@@ -99,7 +24,7 @@
             <input type="email" id="email"><br>
             <label for="">Username</label><br>
             <input type="text" id="username"><br>
-            <label for="">Password</label><i class="fas fa-eye"></i><br>
+            <div class="eye"><div><label for="">Password</label></div><div id="IInd"><i class="fa fa-eye" id="eyelogo"></i><p id="show">Show</p></div></div>
             <input type="password" id="password"><br>
         
                 <input type="checkbox" class="largecheck">
@@ -120,78 +45,6 @@
 </body>
 
 </html>
-<script>
-
-    let form = document.querySelector("form");
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        verify();
-    });
-
-
-
-    class User {
-        constructor(e, u, p) {
-            this.email = e,
-                this.username = u,
-                this.password = p
-        }
-
-        velidate() {
-            let x = this.velidateusername()
-            x.then((res) => {
-                let filter = res.filter((el) => {
-                    return el.username == this.username || el.email == this.email
-                })
-                if (filter.length > 0) {
-                    alert("Email I'd or username already exist")
-                } else {
-                    if (this.password.length >= 10) {
-                        
-                        fetch("http://127.0.0.1:3000/api/users", {
-                            method: "POST",
-                            body: JSON.stringify(this),
-                            headers: {
-                                "Content-Type": "application/json"
-                            }
-                        }).then((res)=> {
-                            return res.json()
-                        }).then((res)=>{
-                            console.log(res)
-                        }).catch((rej)=>{
-                            console.log(rej.message);
-                        })
-                        alert("Sign Up successful");
-                    } else {
-                        alert("Password must 10 characters or long")
-                    }
-                }
-            })
-        }
-
-        velidateusername() {
-            return func()
-            async function func() {
-                try {
-                    let res = await fetch("http://127.0.0.1:3000/api/users");
-                    let data = await res.json();
-                    return data
-                } catch (e) {
-                    return e.message
-                }
-            }
-        }
-
-
-
-    }
-
-    let verify = () => {
-        let e = document.getElementById("email").value;
-        let u = document.getElementById("username").value;
-        let p = document.getElementById("password").value;
-        let us = new User(e, u, p);
-        us.velidate();
-    }
-
+<script src="./styles_scripts/signup.js">
+  
 </script>
