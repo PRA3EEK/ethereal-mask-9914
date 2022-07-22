@@ -1,0 +1,52 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    background-color: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: bolder;
+    background-color: #ffe01b;
+    padding: 25px 25px 25px 25px;
+    height: 40px;
+    font-family: Graphik Web, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+}
+
+#sales {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+#search {
+    background-color: #ffe01b;
+    width: 35px;
+    height: 35px;
+}
+
+#globe {
+    background-color: #ffe01b;
+    width: 35px;
+    height: 35px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    color: #004e56;
+}
