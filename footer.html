@@ -13,27 +13,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #efeeea;
   }
   #top {
-    border: 1px solid;
-    display: flex;
-
+    border-bottom: 0.4px solid;
+    display: grid;
+   grid-template-columns: repeat(6,13%);
     grid-column-gap: 0;
-    padding: 0 auto;
+    height: 500px;
+    justify-content: center;
+    padding-top: 70px;
   }
 
   #top>div {
     padding: 0 15px;
-
+    
   }
-
+  #top>div:last-child>div:last-child{
+    margin-top: 70px;
+  }
+  #top>div:last-child>div{
+    height: 170px;
+   
+    display: grid;
+  
+    grid-template-rows: auto;
+    /* grid-row-gap: auto; */
+  }
   #top>div>a {
     display: block;
-
+    margin-top: 15px;
   }
 
   .aimg>div>div {
-    border: 1px solid;
+   
     width: 20px;
     height: 20px;
    
@@ -54,16 +68,89 @@
   .alimg {
     display: flex;
     grid-column-gap: 10px;
-    border: 1px solid;
+  
     height: 20px;
     align-items: center;
-  }.limg{
-    border: 1px solid;
+  }
+  .alimg>p{
+    transition: margin 0.5s;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+  }
+  .alimg>p:hover{
+    margin-right: 18px;
+  }
+  .limg{
+  
     height: 30px;
     width: 170px;
   }
   .limg>a>img{
     width: 100%;
+  }
+  #one{
+    display: flex;
+    
+ 
+    justify-content: space-between;
+  }
+  #one>div{
+    width: 45%;
+    
+    display: grid;
+    align-items: center;
+  }
+  #one>div>a>img{
+    width: 100%;
+  }
+  #bottom{
+    display: grid;
+    grid-template-columns: 16% 23% 23%;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  #two{
+   
+ 
+    display: grid;
+    grid-template-columns: repeat(6,15%);
+    justify-content: center;
+    align-items: center;
+  }
+  #two>div{
+  
+    text-align: center
+  }
+  #three{
+   
+    height: 300px;
+  
+    padding: 20px;
+  }
+  #sel{
+   font-size: 20px;
+   padding: 10px;
+   margin-bottom: 30px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  #top>div>div>p{
+    font-family: poppins;
+    font-size: 15px;
+  }
+  #bottom>div>div>p{
+    font-size: 11px;
+  }
+  #bottom>div>div>p>a{
+    font-size: 11px;
+    font-weight: 600;
   }
 </style>
 
@@ -71,49 +158,49 @@
   <div id="top">
     <div>
       <h3>Products</h3>
-      <a href="">Why Mailchimp?</a>
-      <a href="">Product Updates</a>
-      <a href="">Email Marketing</a>
-      <a href="">Websites</a>
-      <a href="">Transactional Emails</a>
-      <a href="">How We Compare</a>
-      <a href="">GDPR Compliance</a>
-      <a href="">Security</a>
-      <a href="">Status</a>
-      <a href="">Mobile App</a>
+      <a href="https://mailchimp.com/why-mailchimp/">Why Mailchimp?</a>
+      <a href="https://mailchimp.com/whats-new/">Product Updates</a>
+      <a href="https://mailchimp.com/features/email/">Email Marketing</a>
+      <a href="https://mailchimp.com/features/website-builder/">Websites</a>
+      <a href="https://mailchimp.com/features/transactional-email/">Transactional Emails</a>
+      <a href="https://mailchimp.com/resources/mailchimp-comparisons/">How We Compare</a>
+      <a href="https://mailchimp.com/gdpr/">GDPR Compliance</a>
+      <a href="https://mailchimp.com/about/security/">Security</a>
+      <a href="https://status.mailchimp.com/?_ga=2.121292940.580114487.1658209007-1815128892.1657868662&_gac=1.251654388.1658495725.Cj0KCQjwlemWBhDUARIsAFp1rLV37Tu9nqBpFP9Rr7e2wrNxCU_R6jytGMi77ucDgfdg4PBDumxvqT4aAtSXEALw_wcB">Status</a>
+      <a href="https://mailchimp.com/features/mailchimp-mobile/">Mobile App</a>
     </div>
     <div>
       <h3>Resources</h3>
-      <a href="">Marketing Library</a>
-      <a href="">Free Marketing Tools</a>
-      <a href="">Marketing Glossary</a>
-      <a href="">Integrations Directory</a>
+      <a href="https://mailchimp.com/resources/">Marketing Library</a>
+      <a href="https://mailchimp.com/resources/free-marketing-features-overview/">Free Marketing Tools</a>
+      <a href="https://mailchimp.com/marketing-glossary/">Marketing Glossary</a>
+      <a href="https://mailchimp.com/integrations/">Integrations Directory</a>
     </div>
     <div>
       <h3>Community</h3>
-      <a href="">Agencies & Freelancers</a>
-      <a href="">Developers</a>
-      <a href="">Events</a>
+      <a href="https://mailchimp.com/andco/">Agencies & Freelancers</a>
+      <a href="https://mailchimp.com/developer/">Developers</a>
+      <a href="https://mailchimp.com/events/">Events</a>
     </div>
     <div>
       <h3>Company</h3>
-      <a href="">Our Story</a>
-      <a href="">Newsroom</a>
-      <a href="">Annual Report</a>
-      <a href="">Careers</a>
-      <a href="">Accessibility</a>
+      <a href="https://mailchimp.com/about/">Our Story</a>
+      <a href="https://mailchimp.com/newsroom/">Newsroom</a>
+      <a href="https://mailchimp.com/annual-report/">Annual Report</a>
+      <a href="https://mailchimp.com/jobs/">Careers</a>
+      <a href="https://www.intuit.com/accessibility/">Accessibility</a>
     </div>
     <div>
       <h3>Help</h3>
-      <a href="">Contact Us</a>
-      <a href="">Hire an Expert</a>
-      <a href="">Help Center</a>
-      <a href="">Talk to Sales</a>
+      <a href="https://mailchimp.com/contact/">Contact Us</a>
+      <a href="https://mailchimp.com/experts/">Hire an Expert</a>
+      <a href="https://mailchimp.com/help/">Help Center</a>
+      <a href="https://mailchimp.com/contact/?primaryTopic=prospective">Talk to Sales</a>
     </div>
     <div>
       <div>
         <div class="limg">
-          <a href="">
+          <a href="https://mailchimp.com/presents/">
             <img
               src="https://eep.io/images/yzco4xsimv0y/73ZAoe8O3Y7SXQLeCNTq5u/8ddf1f63b4abdf7f67149d3a9d74a0bd/MCP.svg?w=260&fm=webp&q=80"
               alt="">
@@ -122,31 +209,77 @@
         </div>
         
         <p>Films, podcasts, and original series that celebrate the entrepreneurial spirit.</p>
-        <a href="" class="aimg">
+        <a href="https://mailchimp.com/presents/" class="aimg">
           <div class="alimg">
-            <p>Check it out </p>
-            <div><img src="https://mailchimp.com/release/plums/cxp/images/global_nav/icon-arrow-right.595f14f6.svg"
+            <p >Check it out </p>
+            <div ><img src="https://mailchimp.com/release/plums/cxp/images/global_nav/icon-arrow-right.595f14f6.svg"
                 alt=""></div>
           </div>
         </a>
       </div>
       <div>
         <div class="limg">
-          <a href=""><img src="https://eep.io/images/yzco4xsimv0y/5itQmdXHB6vMuAcvyWp5MR/ef5cd2cecd4c92b7029a22ec67585c65/Courier.svg?w=260&fm=webp&q=80" alt=""></a>
+          <a href="https://mailchimp.com/courier/"><img src="https://eep.io/images/yzco4xsimv0y/5itQmdXHB6vMuAcvyWp5MR/ef5cd2cecd4c92b7029a22ec67585c65/Courier.svg?w=260&fm=webp&q=80" alt=""></a>
         </div>
         <p>Expert insights, industry trends, and inspiring stories that help you live and work on your own terms.</p>
-        <a href="" class="aimg">
-          <div class="alimg">
-            <p>Learn more </p>
-            <div><img src="https://mailchimp.com/release/plums/cxp/images/global_nav/icon-arrow-right.595f14f6.svg"
+        <a href="https://mailchimp.com/courier/" class="aimg">
+          <div class="alimg" >
+            <p >Learn more </p>
+            <div ><img src="https://mailchimp.com/release/plums/cxp/images/global_nav/icon-arrow-right.595f14f6.svg"
                 alt=""></div>
           </div>
         </a>
       </div>
     </div>
   </div>
+  <!-- bottom div -->
   <div id="bottom">
-
+    <!-- first div -->
+      <div id="one">
+        <div>
+         <a href="https://mailchimp.app.link/9v17ZhaeNR"><img src="https://eep.io/images/yzco4xsimv0y/1u3hha7FE0Q402e2qsMu6a/5e403548149c1618b64034284f692ff1/icon-ios.svg?w=320&fm=webp&q=80" alt=""></a>
+        </div>
+        <div>
+         <a href="https://mailchimp.app.link/dxK9lDeHTR"><img src="https://eep.io/images/yzco4xsimv0y/64EpnI4RsQI66c2y2O60G2/4c34d7bc4dd7a4362c7e19a06c109e21/icon-android.svg?w=320&fm=webp&q=80" alt=""></a>
+        </div>
+      </div>
+      <!-- second div -->
+      <div id="two">
+        <div>
+          <a href="https://www.facebook.com/mailchimp/"><img src="https://eep.io/images/yzco4xsimv0y/5daYAeMRSgIUUiSquGwsgI/1904e3f818575ec9625fa15dab193243/icon-facebook.svg?w=320&fm=webp&q=80" alt=""></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/Mailchimp"><img src="https://eep.io/images/yzco4xsimv0y/3VjJhbqftKuok6gqYuUQKy/328d56c5d13ad50b9679b11e716bb218/icon-twitter.svg?w=320&fm=webp&q=80" alt=""></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/mailchimp/"><img src="https://eep.io/images/yzco4xsimv0y/RlNw7Xkw8uKYAUoYU4aQw/ff3eada8736da9e63fbd9f929c6a677c/icon-instagram.svg?w=320&fm=webp&q=80" alt=""></a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/company/mailchimp"><img src="https://eep.io/images/yzco4xsimv0y/n5saFR4miW4U4ygUIQo0A/8f9c60cb133b80fda2fe9bdb825b4a5f/icon-linkedin.svg?w=320&fm=webp&q=80" alt=""></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/user/Mailchimp"><img src="https://eep.io/images/yzco4xsimv0y/2z1ra9BrgQewIqMQckMasg/58e3e8ec04acd60f0642f89dfbd71218/icon-youtube.svg?w=320&fm=webp&q=80" alt=""></a>
+        </div>
+        <div>
+          <a href="https://www.pinterest.com/mailchimp/"><img src="https://eep.io/images/yzco4xsimv0y/7nawBEArBKpxRukK66OZtN/af9879112b20982e13748d47b24c8681/pinterest-logo.svg?w=320&fm=webp&q=80" alt=""></a>
+        </div>
+      </div>
+      <!-- third div -->
+      <div id="three">
+         <div>
+         <select name="" id="sel">
+             <option value="">English</option>
+             <option value="">Español</option>
+             <option value="">Français</option>
+             <option value="">Portugues</option>
+             <option value="">Deutsch</option>
+             <option value="">Italiano</option>
+         </select>
+         </div>
+         <div>
+          <p>©2001-2022 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group. Apple and the Apple logo are trademarks of Apple Inc. Mac App Store is a service mark of Apple Inc. Google Play and the Google Play logo are trademarks of Google Inc. <a href="https://mailchimp.com/legal/privacy/">Privacy </a> | <a href="https://mailchimp.com/legal/">Terms </a> | <a href="https://mailchimp.com/legal/cookies/#optanon-toggle-display/">Cookie Preferences</a></p>
+         </div>
+      </div>
   </div>
 </body>
 
