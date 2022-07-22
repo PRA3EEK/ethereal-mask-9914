@@ -1,14 +1,48 @@
-#container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 80px;
-    align-items: center;
-    background-color: inherit;
+/* 
+user agent stylesheet svg:not(:root) {
+    overflow: hidden;
+} */
+
+body {
+    background: #fff;
+    line-height: 1.35;
+    color: #403b3b;
+    font-family: Graphik Web, Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+}
+
+html {
+    font-size: 100%;
+    font-size: 1em;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+.brandLogo__link svg {
+    -webkit-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+.brandLogo--lockup--animated {
+    overflow: visible;
+}
+
+.globalNav {
+    --navTransition: opacity 0.3s ease;
+    --navTransitionNoOpacity: none;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 500;
+}
+
+.globalNav {
+    --navTransition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.3s ease;
+    --navTransitionNoOpacity: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 * {
@@ -28,7 +62,7 @@ a {
 #box-1 {
     width: 100%;
     height: 550px;
-    background-color: yellow;
+    background-color: #ffe01b;
     display: flex;
     flex-direction: row;
 }
