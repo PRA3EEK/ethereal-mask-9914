@@ -202,10 +202,12 @@ width:50%;
 }
 .emls2>#lsbox1{
     width:70%;
-    font-size:32px;
-    font-weight: lighter;
     margin:auto;
     margin-top:100px;
+}
+.emls2>#lsbox1>h2{
+    font-size:32px;
+    font-weight: lighter;
 }
 .emls2>#lsbox2{
     /* border: 1px solid red; */
