@@ -1,0 +1,289 @@
+*{
+    color: #241c15;
+  font-family: Means Web,Georgia,Times,Times New Roman,serif;
+  /* flex-basis: 100%; */
+ }        
+
+
+
+#details{
+display: flex;
+width: 100%;
+grid-template-rows: repeat(4,1fr);
+margin-left: 10px;
+margin-top: 70px;
+}
+
+
+
+
+
+#compare{
+  display: flex;
+  justify-content: center;
+  margin:20px;
+  margin-top: -20px;
+}
+#compare>button{
+background-color: white;
+display: grid;
+justify-content: center;
+padding-top: 18px;
+   width: 150px;
+   height: 50px;
+   border: 0.01rem solid #004e56;
+   color: #004e56;
+}
+#inner-style{
+display: grid;
+padding-right: 20px;
+justify-content: center;
+grid-template-rows: none;
+grid-template-columns: repeat(2,1fr);
+
+
+}
+#websites_commerce{
+display: grid;
+justify-content: center;
+padding: 240px;
+padding-top: 40px;
+
+}
+.boxes{
+display: grid;
+border-right: 1px solid grey;
+margin: 10px;
+justify-content: center;
+
+}
+
+
+.button{
+display:flex;
+justify-content: space-between;
+}
+.button button{
+width: 20px;
+border-radius: 50%;
+border: 1px solid #007c89 ;
+color: #007c89;
+}
+#endit{
+
+display: grid;
+margin-top: 100px;
+justify-content: center;
+
+}
+#end{
+display: grid;
+justify-content: center;
+width: 250px;
+text-align: center!important;
+}
+
+#logo{
+display: flex;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: none;
+justify-content: space-between;
+margin-top: 50px;
+margin-left: -140px;
+}
+#down{
+margin-top: 100px;
+}
+#logo div{
+width: 20px;
+height: 10px;
+}
+
+
+
+.count{
+    border: 0.125rem solid #dbd9d2;
+    
+}
+
+.count input{
+    height: 20px;
+    width: 80px;
+    border: 0px;
+    margin-left:10px;
+}
+
+
+
+
+
+#top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height:30px;
+}
+#count{
+    height: 100%;
+    width: 250px;
+    border: 0.125rem solid #dbd9d2;
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    font-size: 15px;
+    border-right:0px ;
+}
+
+#first-input{
+    height: 34px;
+    border: 0.125rem solid #dbd9d2;
+    width: 100px;
+    margin:auto;
+   
+
+}
+#first-input input{
+    border: 0px;
+    width: 80px;
+    height: 60px;
+    
+}
+
+#price_list{
+   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: none;
+    margin: auto;
+   
+    width:80%;
+    height: 1000px;
+    margin-top: 70px;
+   
+   
+}
+.premium{
+    display: grid;
+    border: 0.125rem solid #dbd9d2;
+    width: 250px;
+    height: 90%;
+    
+   
+}
+
+.pad{
+    padding-left: 10px;
+    padding-top: -100%;
+}
+.checkmark{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:  #007c89;;
+}
+.recom_2{
+    display: grid;
+    height: 20px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    background-color: #ffe01b;
+    /* margin-bottom: 40px; */
+}
+
+
+.recom{
+    display: grid;
+    height: 20px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.money{
+    font-size: 10px;
+    
+}
+.monthly{
+     display: flex;
+     border-top:0.125rem solid #dbd9d2;
+     width: 250px; 
+     margin-left:-10px;
+    height:5px;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 150px;
+    
+
+    }
+
+    
+
+    .pad>button{
+        width: 200px;
+        height: 40px;
+        background-color: #007c89;
+        border: 0;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .pad p{
+        font-size: 12px;
+    }
+    .monthly_1{
+    
+        margin-top: 210px;
+        text-align: center;
+       border-top: 3px solid #dbd9d2;
+        width: 250px;
+        font-size: 0.875rem;
+        margin-left:-10px;
+        
+    }
+    .monthly_2{
+        border-top: 0.125rem solid #dbd9d2;
+        margin-top: 160px;
+        text-align: center;
+       
+        width: 250px;
+        font-size: 0.875rem;
+        margin-left:-10px;
+    }
+
+    #currency_div{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+        
+    }
+    #currency{
+        border:0px;
+        color:#004e56;
+    }
+ 
+    .hit>button{
+        display:flex;
+        height: 30px;
+        background-color: white;
+        border: 1px solid #004e56;
+    }
+     .go>button{
+        display: flex;
+        height: 30px;
+        background-color: white;
+        border: 1px solid #004e56;
+        margin-top: 70px;
+
+     }
+     .went>button{
+        display: flex;
+        height: 30px;
+        background-color: white;
+        border: 1px solid #004e56;
+        margin-top: 120px;
+
+     }
+
+
+
