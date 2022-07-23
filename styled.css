@@ -1,0 +1,120 @@
+#container{
+    border: 1px solid red;
+    height: 790px;
+    width: 1500px;
+    display: flex;
+}
+#container>div:nth-child(1){
+    border: 1px solid blue;
+    height: 400px;
+    width: 950px;
+    margin: 200px;
+    margin-left: 250px;
+}
+#container>div:nth-child(2){
+    border: 1px solid blue;
+    height: 520px;
+    width: 780px;
+    margin: 100px;
+    margin-right: 200px;
+}
+#container #box_1 h1{
+    color: #692340;
+    margin-top: 1.875rem;
+    font-size: 3.125rem;
+    letter-spacing: -.03125rem;
+    font-family: Means Web,Georgia,Times,Times New Roman,serif;
+    font-weight: 300;
+    line-height: 1;
+}
+#container #box_1 p{
+    font-weight: 100;
+    color: #692340;
+    margin-top: 1.875rem;
+    font-size: 12pxpx;
+    letter-spacing: 0;
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    line-height: 1.4;
+}
+#image_1{
+    height: 520px;
+    width: 490px;
+}
+#para h2{
+    text-align: center;
+    margin-top:150px;
+    font-weight: 300;
+    line-height: 1;
+    color: #692340;
+    font-family: Means Web,Georgia,Times,Times New Roman,serif;
+    font-size: 3.125rem;
+    letter-spacing: -.03125rem;
+    
+}
+#para > p{
+    text-align: center;
+    color: #692340;
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    font-size: 1em;
+    letter-spacing: 0;
+    line-height: 1.5;
+
+}
+#marketing{
+    border: 1px solid red;
+    height: 800px;
+    width: auto;
+    margin-top: 140px;
+}
+#marketing>div:nth-child(1){
+    border: 1px solid blue;
+    height: 300px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 170px;
+}
+#marketing>div:nth-child(1)>img{
+    height: 300px;
+    width: 500px;
+}
+
+#box_2 {
+    border: 1px solid blue;
+    height: 450px;
+    width:auto;
+    display: flex;
+}
+#box_2 > #eye{
+    border: 1px solid blue;
+    height: 300px;
+    width: 400px;
+}
+#box_2 > #register{
+    border: 1px solid blue;
+    height: 400px;
+    width: 500px;
+}
+#box_2 > #eye> img{
+    height: 300px;
+    width: 400px;
+}
+#register > h2{
+    color: #692340;
+    margin-bottom: 4.5rem;
+    font-size: 3.125rem;
+    letter-spacing: -.03125rem;
+    font-family: Means Web,Georgia,Times,Times New Roman,serif;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center!important;
+}
+/* #register > p:nth-child(2){
+
+} */
+
+#mailchimp {
+    border: 1px solid red;
+    height: 500px;
+    width: auto;
+}
+/* #mailchimp > div: */
