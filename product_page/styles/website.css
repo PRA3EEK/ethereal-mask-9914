@@ -4,10 +4,12 @@
 }
 .wbup{
     background-color: #fbf5fe;
+    padding-top:130px;
 }
 #wbupbox1{
     width:50%;
   margin:auto;
+
   text-align: center;
 }
 #wbupbox1>h1{
