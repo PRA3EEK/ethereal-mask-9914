@@ -1,5 +1,5 @@
-import navbar from './navbar.js'
+// import navbar from './navbar.js'
 
-console.log(navbar())
+// console.log(navbar())
 
-document.getElementById('container').innerHTML = navbar()
+// document.getElementById('container').innerHTML = navbar()
