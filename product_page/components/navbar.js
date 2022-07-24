@@ -1,8 +1,3 @@
-// import navbar from './navbar.js'
-
-// console.log(navbar())
-
-// document.getElementById('container').innerHTML = navbar()
 let func = () => {
     document.getElementById("bdropdown").style.animation = ""
     document.getElementById("cdropdown").style.animation = ""

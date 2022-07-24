@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .emup{
+    padding-top:200px;
     background-color: #c5dbf2;
 }
 #emupbox1{
@@ -240,5 +241,6 @@ width:50%;
 font-size: 16px;
 /* border: 1px solid; */
 margin-top:20px;
+padding-bottom: 200px;
 }
 /* last end */
