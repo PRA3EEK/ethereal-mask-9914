@@ -3,6 +3,7 @@ user agent stylesheet svg:not(:root) {
     overflow: hidden;
 } */
 
+
 /* body {
     background: #fff;
     line-height: 1.35;
@@ -78,6 +79,12 @@ a {
     font-size: .9375rem;
     font-weight: 600;
     border: 0px;
+}
+
+#b1d1b>a {
+    background-color: #007c89;
+    color: white;
+    text-decoration: none;
 }
 
 #h2 {
