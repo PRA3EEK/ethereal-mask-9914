@@ -14,7 +14,6 @@
       align-items: center;
       position: fixed;
       width: 100%;
-      border: 1px solid;
   }
   #one{
     display: grid;
@@ -298,6 +297,9 @@
     font-family: sans-serif;
     font-weight: 550;
   }
+  .li:hover{
+    text-decoration: none;
+  }
   .su{
     width: 120px;
     height: 50px;
@@ -309,6 +311,11 @@
     font-weight: 550;
     background-color: #007c89;
     color: white;
+  }
+  .su:hover{
+     text-decoration: none;
+     background-color: white;
+     color: #007c89;
   }
   #three{
     display: flex;

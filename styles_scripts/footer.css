@@ -118,13 +118,14 @@
     margin-bottom: 30px;
 }
 
-a {
+.a {
     text-decoration: none;
     color: black;
     font-size: 13px;
-} */
+    
+} 
 
-a:hover {
+.a:hover {
     text-decoration: underline;
 }
 
