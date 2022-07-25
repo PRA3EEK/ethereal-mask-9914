@@ -2,21 +2,21 @@
     margin: 0;
     padding: 0;
 }
-#container{
+#con{
     /* border: 1px solid red; */
     height: 790px;
     width: 1550px;
     display: flex;
     background-color: #fbeeca;
 }
-#container>#box_1{
+#con>#box_1{
     /* border: 1px solid blue; */
     height: 400px;
     width: 1050px;
     margin: 200px;
     margin-left: 250px;
 }
-#container>div:nth-child(2){
+#con>div:nth-child(2){
     /* border: 1px solid blue; */
     height: 520px;
     width: 780px;
@@ -24,7 +24,7 @@
     margin-right: 200px;
     
 }
-#container #box_1 h1{
+#con #box_1 h1{
     color: #692340;
     margin-top: 1.875rem;
     font-size: 3.125rem;
@@ -33,7 +33,7 @@
     font-weight: 300;
     line-height: 1;
 }
-#container #box_1 p{
+#con #box_1 p{
     font-weight: 100;
     color: #692340;
     margin-top: 1.875rem;
