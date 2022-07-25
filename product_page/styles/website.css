@@ -4,6 +4,7 @@
 }
 .wbup{
     background-color: #fbf5fe;
+    padding-top:200px;
     
 }
 #wbupbox1{
@@ -263,6 +264,7 @@ padding-bottom:100px;
 /* last start */
 .wbls1{
     width:100%;
+    padding-bottom: 200px;
 }
 .wbls1>#wblsbox1{
     /* border: 1px solid; */
@@ -310,7 +312,6 @@ width:50%;
 .wbls1>#wblsbox2>#lsbox1{
     width:60%;
     margin:auto;
-    
     text-align: center;
 }
 .wbls1>#wblsbox2>#lsbox1>h2{
