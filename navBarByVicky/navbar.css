@@ -201,8 +201,8 @@
   }
   #adropdown,#bdropdown,#cdropdown,#ddropdown,#edropdown,#fdropdown,#gdropdown,#hdropdown,#idropdown,#jdropdown{
     margin: 0;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 0%;
     left: 37%;
     opacity: 0;
     visibility: hidden;

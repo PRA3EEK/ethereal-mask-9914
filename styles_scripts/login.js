@@ -15,9 +15,11 @@ let form =document.querySelector("form").addEventListener("submit",(e)=>{
       if(logindata.length>0){
         alert("You are already logged in!")
       }else{
-        alert("login successful");
+      
         logindata.push(filter[0]);
         localStorage.setItem("login",JSON.stringify(logindata));
+        alert("login successful");
+        window.location.href = ""
       }
     }else{
       alert("Wrong credentials!")
