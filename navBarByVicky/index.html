@@ -157,10 +157,10 @@
             <div>
                 <a href=""><img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt=""></a>
             </div>
-            <div>
+            <div id="login">
                 <a href="../login.html" class="li">Log In</a>
             </div>
-            <div>
+            <div id="signup">
                 <a href="../signup.html" class="su">Sign Up</a>
             </div>
         </div>
@@ -672,6 +672,21 @@
         </div>
 
     </div>
+    <div id="profilediv">
+          <div>
+            <h3 id="name">Prateek</h3>
+          </div>
+          <div>
+            <p>Audience</p>
+            <hr>
+            <p>Campaigns</p>
+            <hr>
+            <p>Account</p>
+        </div>
+          <div>
+            <button id="SO">Sign Out</button>
+          </div>
+    </div>
 </body>
 
 </html>
@@ -805,4 +820,51 @@
         document.getElementById("jdropdown").style.animation = ""
         document.getElementById("IIdropdown").style.animation = ""
     }
+
+let logindata = JSON.parse(localStorage.getItem("login"));
+if(logindata){
+    let username = logindata[0].username.toUpperCase()
+    let x = username.split("");
+    console.log(x[0]);
+    document.getElementById("login").style.display = "none"
+    document.getElementById("signup").style.display = "none"
+    let div = document.createElement("div");
+    div.setAttribute("id","profile")
+    div.style.display = "flex";
+    let p = document.createElement("p");
+  
+    let p1 = document.createElement("p");
+     let img = document.createElement("img");
+     img.src = "https://cdn-icons.flaticon.com/png/128/656/premium/656979.png?token=exp=1658765370~hmac=7f189cb3746bb9d7f1d434af52e1c07e"
+    p1.innerText = x[0];
+    p1.style.border = "1px solid"
+    p.innerHTML = `Hi, ${username}`
+    div.append(p1,p,img)
+    document.getElementById("three").append(div);
+    
+    document.getElementById("name").innerText = username
+
+
+    document.getElementById("profile").addEventListener("mouseover",()=>{
+        document.getElementById("profilediv").style.animation = "topin 0.5s forwards"
+      
+    })
+    document.getElementById("profile").addEventListener("mouseleave",()=>{
+        document.getElementById("profilediv").style.animation = ""
+      
+    })
+    document.getElementById("profilediv").addEventListener("mouseover",()=>{
+        document.getElementById("profilediv").style.animation = "topin 0.5s forwards"
+      
+    })
+    document.getElementById("profilediv").addEventListener("mouseleave",()=>{
+        document.getElementById("profilediv").style.animation = ""
+      
+    })
+}
+    document.getElementById("SO").addEventListener("click",()=>{
+        localStorage.removeItem("login");
+        window.location.reload();
+    })
+ 
 </script>

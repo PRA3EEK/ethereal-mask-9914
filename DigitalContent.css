@@ -2,20 +2,20 @@
     margin: 0;
     padding: 0;
 }
-/* h2{
+.DC{
     
-    margin-top: 1.875rem;
+   padding-top: 90px;
     font-size: 4rem;
     letter-spacing: -.0625rem;
     color: #241c15;
     font-weight: 300;
     line-height: 1;
     font-family: Means Web,Georgia,Times,Times New Roman,serif;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
+    /* margin-block-start: 0.83em;
+    margin-block-end: 0.83em; */
     text-align: center;
 }
-p{
+.CD{
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Ibarra Real Nova', serif;
     text-align: center;

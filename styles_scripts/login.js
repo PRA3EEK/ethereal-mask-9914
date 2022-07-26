@@ -18,7 +18,7 @@ let verify = () => {
             logindata.push(filter[0])
             localStorage.setItem('login', JSON.stringify(logindata))
             alert('login successful')
-            window.location.href = '../navBarByVicky/navbar.html'
+              window.location.href = "file:///C:/Users/Prateek%20Chauhan/OneDrive/Desktop/ethereal-mask-9914/navBarByVicky/index.html"
         }
     } else {
         alert('Wrong credentials!')
