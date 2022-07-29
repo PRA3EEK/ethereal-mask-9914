@@ -27,7 +27,7 @@ class User {
         }else if(!this.velidateusername(this.username)){
             alert ("Username already exist!")
         }else if(!this.velidatepassword(this.password)){
-         alert("Password must be characters long!")
+         alert("Password must be 10 characters long!")
         }
     }
    }
